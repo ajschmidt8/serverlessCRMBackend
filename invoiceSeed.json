@@ -1,0 +1,26 @@
+[
+  {
+    "customer_id": "5b1d5f4056f712d40c69c7ff",
+    "document": "invoice",
+    "date": 11307,
+    "amount": "5273.41"
+  },
+  {
+    "customer_id": "5b1d5f404d50679154c65763",
+    "document": "invoice",
+    "date": 6269,
+    "amount": "4124.55"
+  },
+  {
+    "customer_id": "5b1d5f4035eab6d0f7a409a6",
+    "document": "invoice",
+    "date": 1971,
+    "amount": "5505.02"
+  },
+  {
+    "customer_id": "5b1d5f40e574f696be5f7ec9",
+    "document": "invoice",
+    "date": 3596,
+    "amount": "6108.85"
+  }
+]

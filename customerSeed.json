@@ -1,0 +1,86 @@
+[
+  {
+    "customer_id": "5b1d5f4056f712d40c69c7ff",
+    "document": "info",
+    "firstName": "Johns",
+    "lastName": "Patterson",
+    "email": "johnspatterson@zolavo.com",
+    "phone": "951-578-3666",
+    "address": "434 Maple Street",
+    "city": "Saticoy",
+    "state": "Oklahoma",
+    "zip": "65827"
+  },
+  {
+    "customer_id": "5b1d5f404d50679154c65763",
+    "document": "info",
+    "firstName": "Norman",
+    "lastName": "Rodriquez",
+    "email": "normanrodriquez@zolavo.com",
+    "phone": "946-464-2491",
+    "address": "760 Noel Avenue",
+    "city": "Movico",
+    "state": "Washington",
+    "zip": "52144"
+  },
+  {
+    "customer_id": "5b1d5f4035eab6d0f7a409a6",
+    "document": "info",
+    "firstName": "Jimmie",
+    "lastName": "Adkins",
+    "email": "jimmieadkins@zolavo.com",
+    "phone": "926-538-3318",
+    "address": "522 Crown Street",
+    "city": "Diaperville",
+    "state": "Maryland",
+    "zip": "22553"
+  },
+  {
+    "customer_id": "5b1d5f40e574f696be5f7ec9",
+    "document": "info",
+    "firstName": "Gladys",
+    "lastName": "Daniels",
+    "email": "gladysdaniels@zolavo.com",
+    "phone": "884-567-2718",
+    "address": "270 Agate Court",
+    "city": "Gordon",
+    "state": "Minnesota",
+    "zip": "56928"
+  },
+  {
+    "customer_id": "5b1d5f40343afa4c55e31e43",
+    "document": "info",
+    "firstName": "Calderon",
+    "lastName": "Walters",
+    "email": "calderonwalters@zolavo.com",
+    "phone": "944-487-3829",
+    "address": "212 King Street",
+    "city": "Coleville",
+    "state": "New York",
+    "zip": "79932"
+  },
+  {
+    "customer_id": "5b1d5f40c05df7256ff03339",
+    "document": "info",
+    "firstName": "Conner",
+    "lastName": "Smith",
+    "email": "connersmith@zolavo.com",
+    "phone": "932-447-3502",
+    "address": "490 Flatlands Avenue",
+    "city": "Richville",
+    "state": "Massachusetts",
+    "zip": "74284"
+  },
+  {
+    "customer_id": "5b1d5f4047c360caacc597d0",
+    "document": "info",
+    "firstName": "Kristie",
+    "lastName": "Winters",
+    "email": "kristiewinters@zolavo.com",
+    "phone": "830-405-2041",
+    "address": "543 Concord Street",
+    "city": "Vowinckel",
+    "state": "Northern Mariana Islands",
+    "zip": "92195"
+  }
+]
