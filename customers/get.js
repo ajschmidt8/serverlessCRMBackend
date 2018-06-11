@@ -20,7 +20,11 @@ module.exports.get = (event, context, callback) => {
       console.error(error);
       callback(null, {
         statusCode: error.statusCode || 501,
-        headers: { "Content-Type": "text/plain" },
+        headers: {
+          "Content-Type": "text/plain",
+          "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+          "Access-Control-Allow-Credentials": true // Required for cookies, authorization headers with HTTPS
+        },
         body: "Couldn't fetch the customer."
       });
       return;
@@ -29,6 +33,10 @@ module.exports.get = (event, context, callback) => {
     // create a response
     const response = {
       statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+        "Access-Control-Allow-Credentials": true // Required for cookies, authorization headers with HTTPS
+      },
       body: JSON.stringify(result.Items)
     };
     callback(null, response);

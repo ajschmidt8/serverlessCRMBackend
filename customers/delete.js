@@ -21,7 +21,11 @@ module.exports.delete = (event, context, callback) => {
       console.error(err);
       callback(null, {
         statusCode: err.statusCode || 501,
-        headers: { "Content-Type": "text/plain" },
+        headers: {
+          "Content-Type": "text/plain",
+          "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+          "Access-Control-Allow-Credentials": true // Required for cookies, authorization headers with HTTPS
+        },
         body: "Couldn't delete the customer."
       });
       return;
@@ -30,6 +34,10 @@ module.exports.delete = (event, context, callback) => {
     // create a response
     const response = {
       statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+        "Access-Control-Allow-Credentials": true // Required for cookies, authorization headers with HTTPS
+      },
       body: JSON.stringify(data.Attributes)
     };
     callback(null, response);
