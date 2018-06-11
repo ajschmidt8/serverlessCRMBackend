@@ -4,7 +4,6 @@ const qs = require("querystring");
 
 module.exports.add = (event, context, callback) => {
   const customer = qs.parse(event.body);
-  console.log(customer);
 
   const params = {
     TableName: process.env.DYNAMODB_TABLE,
@@ -13,8 +12,6 @@ module.exports.add = (event, context, callback) => {
       date: Number(customer.date)
     }
   };
-
-  console.log(params);
 
   dynamodb.put(params, (err, data) => {
     // handle potential errors
@@ -31,7 +28,7 @@ module.exports.add = (event, context, callback) => {
     // create a response
     const response = {
       statusCode: 200,
-      body: params.Item
+      body: JSON.stringify(params.Item)
     };
     callback(null, response);
   });
