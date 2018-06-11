@@ -25,13 +25,42 @@ provider:
 #  region: us-east-1
 
 functions:
-  all:
+  allCustomers:
       handler: customers/all.all
       events:
         - http:
             path: customers/
             method: get
             cors: true
+  addCustomer:
+      handler: customers/add.add
+      events:
+        - http:
+            path: customer/
+            method: post
+            cors: true
+  deleteCustomer:
+      handler: customers/delete.delete
+      events:
+        - http:
+            path: customer/{id}
+            method: delete
+            cors: true
+            request:
+              parameters:
+                paths:
+                  id: true
+  getCustomer:
+      handler: customers/get.get
+      events:
+        - http:
+            path: customer/{id}
+            method: get
+            cors: true
+            request:
+              parameters:
+                paths:
+                  id: true
 
 # you can add CloudFormation resource templates here
 resources:
@@ -55,7 +84,7 @@ resources:
           - AttributeName: document
             KeyType: RANGE
         GlobalSecondaryIndexes:
-          - IndexName: "invoiceIndex"
+          - IndexName: "documentIndex"
             Projection:
               ProjectionType: ALL
             ProvisionedThroughput:

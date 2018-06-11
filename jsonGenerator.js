@@ -12,7 +12,8 @@
     address: "{{integer(100, 999)}} {{street()}}",
     city: "{{city()}}",
     state: "{{state()}}",
-    zip: "{{integer(10000, 99999)}}"
+    zip: "{{integer(10000, 99999)}}",
+    date: "{{integer(1000, 6000)}}"
   }
 ];
 

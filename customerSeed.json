@@ -9,7 +9,8 @@
     "address": "434 Maple Street",
     "city": "Saticoy",
     "state": "Oklahoma",
-    "zip": "65827"
+    "zip": "65827",
+    "date": 11307
   },
   {
     "customer_id": "5b1d5f404d50679154c65763",
@@ -21,7 +22,8 @@
     "address": "760 Noel Avenue",
     "city": "Movico",
     "state": "Washington",
-    "zip": "52144"
+    "zip": "52144",
+    "date": 11307
   },
   {
     "customer_id": "5b1d5f4035eab6d0f7a409a6",
@@ -33,7 +35,8 @@
     "address": "522 Crown Street",
     "city": "Diaperville",
     "state": "Maryland",
-    "zip": "22553"
+    "zip": "22553",
+    "date": 11307
   },
   {
     "customer_id": "5b1d5f40e574f696be5f7ec9",
@@ -45,7 +48,8 @@
     "address": "270 Agate Court",
     "city": "Gordon",
     "state": "Minnesota",
-    "zip": "56928"
+    "zip": "56928",
+    "date": 11307
   },
   {
     "customer_id": "5b1d5f40343afa4c55e31e43",
@@ -57,7 +61,8 @@
     "address": "212 King Street",
     "city": "Coleville",
     "state": "New York",
-    "zip": "79932"
+    "zip": "79932",
+    "date": 11307
   },
   {
     "customer_id": "5b1d5f40c05df7256ff03339",
@@ -69,7 +74,8 @@
     "address": "490 Flatlands Avenue",
     "city": "Richville",
     "state": "Massachusetts",
-    "zip": "74284"
+    "zip": "74284",
+    "date": 11307
   },
   {
     "customer_id": "5b1d5f4047c360caacc597d0",
@@ -81,6 +87,7 @@
     "address": "543 Concord Street",
     "city": "Vowinckel",
     "state": "Northern Mariana Islands",
-    "zip": "92195"
+    "zip": "92195",
+    "date": 11307
   }
 ]

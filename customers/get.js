@@ -1,14 +1,16 @@
 "use strict";
 const dynamodb = require("../db");
 
-module.exports.all = (event, context, callback) => {
+module.exports.get = (event, context, callback) => {
+  const customerId = event.pathParameters.id;
+
   const params = {
     TableName: process.env.DYNAMODB_TABLE,
-    IndexName: "documentIndex",
     ExpressionAttributeValues: {
+      ":c_id": customerId,
       ":d_id": "info"
     },
-    KeyConditionExpression: "document = :d_id"
+    KeyConditionExpression: "customer_id = :c_id AND document = :d_id"
   };
 
   // fetch all todos from the database
@@ -19,7 +21,7 @@ module.exports.all = (event, context, callback) => {
       callback(null, {
         statusCode: error.statusCode || 501,
         headers: { "Content-Type": "text/plain" },
-        body: "Couldn't fetch the customers."
+        body: "Couldn't fetch the customer."
       });
       return;
     }
@@ -27,7 +29,7 @@ module.exports.all = (event, context, callback) => {
     // create a response
     const response = {
       statusCode: 200,
-      body: JSON.stringify(result.Items)
+      body: result.Items
     };
     callback(null, response);
   });
